@@ -1,0 +1,34 @@
+/* Seleciona todos os elementos h2 da página (Seletor de Tipo) */
+h2 {
+    color: darkblue; /* */
+}
+
+/* Seleciona parágrafos que estão dentro de uma div (Seletor Descendente) */
+div p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Seleciona apenas o elemento com o id "principal" (Seletor de ID) */
+#principal {
+    background-color: #f4f4f4; /* */
+}
+
+div {
+    color: blue; /* Propriedade herdada automaticamente */
+    border: 2px solid red; /* Propriedade NÃO herdada por padrão */
+}
+
+div p {
+    /* Força a herança da borda do elemento pai */
+    border: inherit; 
+}
+
+/* Regra 1 */
+p { color: green; }
+
+/* Regra 2 - Prevalece sobre a anterior por vir depois no código */
+p { color: red; }
+
+/* Regra 3 - Ganha de todas as outras devido à importância */
+p { color: blue !important; }

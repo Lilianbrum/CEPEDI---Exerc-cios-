@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício de Estilização - Aula 23</title>
+    </head>
+<body>
+
+    <header id="principal">
+        <h1>Meu blog</h1>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                <li class="menu-item"><a href="#contato" id="link-contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article data-post-id="101">
+            <header>
+                <h2>Cascata CSS</h2>
+            </header>
+
+            <div class="conteudo-post">
+                <p class="destaque">
+                    Texto.
+                </p>
+                <p>
+                    Texto 1 <strong>Texto 2</strong> Texto 3.
+                </p>
+            </div>
+
+            <section>
+                <h3>Exemplo de Formulário (da aula 22)</h3>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Dados de Contato</legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 IFMG - Capacita React</p>
+    </footer>
+
+</body>
+</html>

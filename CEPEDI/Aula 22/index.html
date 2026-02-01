@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício Aula 22 - Formulários</title>
+</head>
+<body>
+
+    <h1>Formulário de Feedback</h1>
+
+    <form action="/enviar-dados" method="POST">
+        
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <p>
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sua Opinião</legend>
+
+            <p>
+                <label for="assunto">Assunto:</label><br>
+                <select id="assunto" name="assunto">
+                    <option value="sugestao">Sugestão</option>
+                    <option value="critica">Crítica</option>
+                    <option value="elogio">Elogio</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+            </p>
+        </fieldset>
+
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpar Dados</button>
+
+    </form>
+
+</body>
+</html>
