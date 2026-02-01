@@ -1,0 +1,24 @@
+.cardContainer {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 300px;
+  transition: background-color 0.3s ease; /* Desafio Extra: Hover suave */
+  background-color: var(--bg-card, #fff); /* Uso de variável CSS */
+}
+
+.cardContainer:hover {
+  --bg-card: #f0f8ff; /* Altera a variável no hover */
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin: 12px 0;
+  color: #333;
+}
+

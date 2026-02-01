@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="topo">
+        <div class="container">
+            <h1>Capacita React</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#sobre">Home</a></li>
+                    <li><a href="#modulos">Sobre</a></li>
+                    <li><a href="#inscricao">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="sobre" class="section-padding">
+            <article class="conteudo-principal">
+                <h2>Titulo 2</h2>
+                <p class="destaque">texto.</p>
+                <p>Texto.</p>
+            </article>
+        </section>
+
+        <section id="modulos" class="grid-container">
+            <h3>Título 3 </h3>
+            
+            <div class="flex-wrapper">
+                <div class="card" data-post-id="1">
+                    <img src="https://via.placeholder.com/150" alt="Ícone de HTML" class="card-img">
+                    <div class="card-body">
+                        <h4>Título 4 </h4>
+                        <p>Texto.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-post-id="2">
+                    <img src="https://via.placeholder.com/150" alt="Ícone de CSS" class="card-img">
+                    <div class="card-body">
+                        <h4>Título 4</h4>
+                        <p>Texto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="inscricao" class="form-container">
+            <h2>Chamado para o form</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Dados Cadastrais</legend>
+                    
+                    <div class="campo-grupo">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="interesse">Nível de conhecimento:</label>
+                        <select id="interesse" name="interesse">
+                            <option value="iniciante">Iniciante</option>
+                            <option value="intermediario">Intermediário</option>
+                            <option value="avancado">Avançado</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Quero me inscrever!</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 IFMG - Programa Capacita. Todos os direitos reservados.</p>
+            <a href="#topo">Voltar ao topo</a>
+        </div>
+    </footer>
+
+</body>
+</html>
