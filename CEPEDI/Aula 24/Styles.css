@@ -1,0 +1,12 @@
+.header-container {
+    display: flex; /* Transforma em container flexível */
+    justify-content: space-between; /* Espaça logo e menu nas extremidades */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os links */
+}

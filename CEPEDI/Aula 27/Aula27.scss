@@ -1,0 +1,62 @@
+// mystyle.scss
+
+// Definição de Variáveis (Página 14-16)
+$primary-color: #3498db;
+$danger-color: red;
+$font-stack: 'Helvetica', sans-serif;
+
+body {
+  font-family: $font-stack;
+  
+  // Aninhamento (Página 22-26)
+  nav {
+    background-color: #f4f4f4;
+    
+    ul {
+      list-style: none;
+      display: flex;
+      
+      li {
+        padding: 10px;
+        
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          
+          &:hover { // Uso do seletor pai &
+            color: darken($primary-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Definição do Mixin
+@mixin button-style($bg-color, $text-color: white) {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: $bg-color;
+  color: $text-color;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+// Aplicação (Uso do @include)
+.btn-primary {
+  @include button-style($primary-color);
+}
+
+.danger {
+  @include button-style($danger-color);
+  font-size: 25px; // Complementando conforme exemplo da pág 42
+}
+
+// main.scss
+@import 'variables';
+@import 'buttons';
+
+h1 {
+  color: $primary-color;
+}
